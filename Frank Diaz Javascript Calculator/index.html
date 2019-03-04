@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Javascript Calculator</title>
+  </head>
+  <body>
+    <h1>Javascript Calculator</h1>
+    <h3>By: Frank Diaz</h3>
+    <br>
+    <div class="calcStyle">
+      <form name="calcForm">
+        <center>
+        <input type="text" name="calcDisplay" id="numDisplay" placeholder="0" readonly="readonly">
+        <br>
+        <!-- <input type="text" name="calcAnswer" id="numAnswer" readonly="readonly"> -->
+        <br>
+        <input type="button" name="numClear" class="calcClear" value="AC" onclick="calcClear()">
+        <input type="button" name="numPerc" class="calcButton" value="%" onclick="calcCom('%')">
+        <input type="button" name="numDiv" class="calcButton" value="/" onclick="calcCom('/')">
+        <br>
+        <input type="button" name="numSeven" class="calcButton" value="7" onclick="calcNum(7)">
+        <input type="button" name="numEight" class="calcButton" value="8" onclick="calcNum(8)">
+        <input type="button" name="numNine" class="calcButton" value="9" onclick="calcNum(9)">
+        <input type="button" name="numMult" class="calcButton" value="*" onclick="calcCom('*')">
+        <br>
+        <input type="button" name="numFour" class="calcButton" value="4" onclick="calcNum(4)">
+        <input type="button" name="numFive" class="calcButton" value="5" onclick="calcNum(5)">
+        <input type="button" name="numSix" class="calcButton" value="6" onclick="calcNum(6)">
+        <input type="button" name="numSub" class="calcButton" value="-" onclick="calcCom('-')">
+        <br>
+        <input type="button" name="numOne" class="calcButton" value="1" onclick="calcNum(1)">
+        <input type="button" name="numTwo" class="calcButton" value="2" onclick="calcNum(2)">
+        <input type="button" name="numThree" class="calcButton" value="3" onclick="calcNum(3)">
+        <input type="button" name="numAdd" class="calcButton" value="+" onclick="calcCom('+')">
+        <br>
+        <input type="button" name="numZero" class="calcZero" value="0" onclick="calcNum(0)">
+        <input type="button" name="numDec" class="calcButton" value="." onclick="calcCom('.')">
+        <input type="button" name="numEquals" class="calcButton" value="=" onclick="calcEquals()">
+        <br>
+      </center>
+    </form>
+  </div>
+  <script src="js/main.js"></script>
+  </body>
+</html>
